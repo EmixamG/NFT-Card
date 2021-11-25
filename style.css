@@ -1,0 +1,131 @@
+*, :before, :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background: hsl(217, 54%, 11%);
+    height: 100vh;
+    font-family: 'outfit', sans-serif;
+    line-height: 1.5;
+}
+
+
+
+.card {
+    background: hsl(216, 50%, 16%);
+    height: fit-content;
+    width: 90%;
+    max-width: 370px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px rgba(0,0,0,0.5);
+}
+
+.card .container {
+    width: 100%;
+    padding: 25px;
+}
+
+#equilib {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px;
+    transition: opacity 0.3s;
+}
+
+
+
+.image {
+    background-color: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+
+.image svg {
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image:hover #equilib{
+    opacity: 0.7;
+}
+
+.image:hover svg {
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 1;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.text p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+}
+
+.price-eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.price-eth img {
+    padding-right: 5px;
+}
+
+
+.time-left {
+    color: hsl(215, 51%, 70%);
+}
+
+.author {
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+}
+
+.author p {
+    margin: auto 0;
+    padding-left: 20px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.author span {
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.author img {
+    width : 40px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin-right: 20px
+}
